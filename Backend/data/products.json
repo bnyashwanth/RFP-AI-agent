@@ -1,0 +1,4 @@
+[
+  { "name": "Power Cable 11kV", "specs": { "voltage": "11kV", "material": "Copper" } },
+  { "name": "Power Cable 33kV", "specs": { "voltage": "33kV", "material": "Aluminium" } }
+]

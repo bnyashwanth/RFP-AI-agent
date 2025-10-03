@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Govt RFP for Power Cables",
+    "dueDate": "2025-12-30",
+    "products": [
+      { "name": "Power Cable 11kV", "specs": { "voltage": "11kV", "material": "Copper" } }
+    ],
+    "tests": [{ "name": "High Voltage Test", "requirements": "Must pass 11kV load test" }],
+    "status": "Pending"
+  },
+  {
+    "title": "Metro Rail Project - Signal Cables",
+    "dueDate": "2025-11-15",
+    "products": [
+      { "name": "Signal Cable 4 Core", "specs": { "cores": "4", "insulation": "PVC" } },
+      { "name": "Fiber Optic Cable", "specs": { "type": "Single-Mode", "length": "500m" } }
+    ],
+    "tests": [{ "name": "Continuity Test", "requirements": "No breaks in connection" }],
+    "status": "Pending"
+  },
+  {
+    "title": "National Highway Authority - Lighting Wires",
+    "dueDate": "2025-10-28",
+    "products": [
+      { "name": "Flexible Wire 2.5mm", "specs": { "diameter": "2.5mm", "material": "Copper" } }
+    ],
+    "tests": [{ "name": "Flexibility Test", "requirements": "No cracks after 100 bends" }],
+    "status": "Pending"
+  }
+]
