@@ -68,13 +68,13 @@ h1, h2, h3 {
 }
 
 .badge-pending {
-  background-color: #f59e0b; /* Amber */
+  background-color: #f40c0c; /* Amber */
 }
 
 /* Details Section */
 .details-section {
   margin-top: 30px;
-  background-color: #fff;
+  background-color: #cad1ec;
   border: 1px solid #e0e7ef;
   border-radius: 8px;
   padding: 25px;
@@ -188,4 +188,122 @@ h1, h2, h3 {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+.badge-pending {
+  background-color: #f59e0b; /* Amber */
+}
+
+.badge-completed {
+  background-color: #22c55e; /* Green */
+}
+/* Add this anywhere in your index.css file */
+.rfp-card.completed {
+  cursor: default;
+  background-color: #f8f9fa;
+}
+/* === Main App Layout === */
+#root {
+  display: flex;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 30px;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+
+.sidebar {
+  width: 250px;
+  flex-shrink: 0;
+  background-color: #fff;
+  border-right: 1px solid #e0e7ef;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.sidebar-header {
+  padding: 20px;
+  border-bottom: 1px solid #e0e7ef;
+}
+.sidebar-header h3 {
+  margin: 0;
+  color: #1c3d5a;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 20px 0;
+  margin: 0;
+  flex-grow: 1;
+}
+.sidebar-menu li a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #556;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+.sidebar-menu li a:hover {
+  background-color: #f4f7f9;
+  color: #0077c8;
+}
+
+.sidebar-footer {
+  padding: 20px;
+  border-top: 1px solid #e0e7ef;
+}
+.theme-toggle, .signin-link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+.theme-toggle:hover {
+  background-color: #f4f7f9;
+}
+.signin-link a {
+  text-decoration: none;
+  color: #556;
+}
+
+/* === Dark Mode Styles === */
+body.dark-mode {
+  background-color: #1E1F25;
+  color: #E6E8EF;
+}
+.dark-mode .sidebar {
+  background-color:#23242B;
+  border-right-color: #3E404F;
+}
+.dark-mode .sidebar-header, .dark-mode .sidebar-footer {
+  border-color: #4a5568;
+}
+.dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode .sidebar-header h3 {
+  color: #fff;
+}
+.dark-mode .sidebar-menu li a, .dark-mode .signin-link a {
+  color: #cbd5e0;
+}
+.dark-mode .sidebar-menu li a:hover, .dark-mode .theme-toggle:hover {
+  background-color: #2E303F;
+  color: #fff;
+}
+.dark-mode .rfp-card, .dark-mode .details-section {
+  background-color: #2A2D3E;
+  border-color: #3E404F;
+}
+.dark-mode .rfp-card.selected {
+  border-left-color: #4299e1;
+}
+.dark-mode .rfp-card-info p {
+  color: #a0aec0;
 }

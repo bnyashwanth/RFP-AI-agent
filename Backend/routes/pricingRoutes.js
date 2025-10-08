@@ -1,10 +1,8 @@
 const express = require("express");
+const { calculatePricing } = require("../controllers/pricingagent");
 const router = express.Router();
 
-// Example route
-router.get("/", (req, res) => {
-  res.json({ message: "Pricing routes working" });
-});
+// This will handle GET requests to /api/pricing/:id
+router.get("/:id", calculatePricing);
 
-// Export router
 module.exports = router;

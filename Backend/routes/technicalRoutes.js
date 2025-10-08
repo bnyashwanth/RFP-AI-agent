@@ -1,10 +1,12 @@
 const express = require("express");
+
+const { matchSKUs, downloadSkuCsv } = require("../controllers/technicalagent");
 const router = express.Router();
 
-// Example route
-router.get("/", (req, res) => {
-  res.json({ message: "Technical routes working" });
-});
+// This will handle GET requests to /api/technical/:id
+router.get("/:id", matchSKUs);
 
-// Export router
+// This will handle GET requests to /api/technical/:id/download
+router.get("/:id/download", downloadSkuCsv);
+
 module.exports = router;

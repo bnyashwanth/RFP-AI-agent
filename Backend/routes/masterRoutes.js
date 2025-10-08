@@ -1,10 +1,13 @@
+// this master route is for fetching the final response data and downloading the pdf
 const express = require("express");
-const router = express.Router();
 
-// Example route
-router.get("/", (req, res) => {
-  res.json({ message: "Master routes working" });
-});
+const { getFinalResponseData, downloadFinalResponsePdf } = require("../controllers/masteragent");
+const router = express.Router(); // express router is used 
 
-// Export router
+// This route gets the UI
+router.get("/:id/data", getFinalResponseData);
+
+// this route is used for  do JSON data for thewnloading  PDF file
+router.get("/:id/download", downloadFinalResponsePdf);
+
 module.exports = router;
