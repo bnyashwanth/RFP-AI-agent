@@ -1,5 +1,6 @@
 const RFP = require("../models/RFP");
 const sampleRFPs = require("../data/sampleRFPs.json");
+// changeds the salesagent.js file to add console logs for debugging
 
 exports.getUpcomingRFPs = async (req, res) => {
   try {
