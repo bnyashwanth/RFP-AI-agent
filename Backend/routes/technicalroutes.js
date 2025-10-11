@@ -1,6 +1,6 @@
 const express = require("express");
 
-const { matchSKUs, downloadSkuCsv } = require("../controllers/technicalagent");
+const { matchSKUs, downloadSkuCsv } = require("../controllers/technicalAgent");
 // i am facing issues with the technical agent page so i added error handling for debugging
 const router = express.Router();
 
