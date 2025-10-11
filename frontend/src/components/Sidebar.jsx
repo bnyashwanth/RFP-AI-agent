@@ -6,7 +6,7 @@ const Sidebar = ({ isDarkMode, toggleTheme }) => {
   return (
     <div className="sidebar">
       <div className="sidebar-header">
-        <h3>RFPilot 🚀</h3>
+        <h3>RFPilot </h3>
       </div>
       <ul className="sidebar-menu">
         <li>

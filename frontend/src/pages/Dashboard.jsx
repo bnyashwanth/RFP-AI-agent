@@ -71,6 +71,7 @@ const Dashboard = () => {
   return (
     <div>
       <h2>1. Sales Agent: Upcoming RFPs</h2>
+      <h3> Please select the upload RFPs to upload your custom RFP and analyse it </h3>
       <RFPList
         rfps={rfps}
         onSelectRfp={handleSelectRfp}

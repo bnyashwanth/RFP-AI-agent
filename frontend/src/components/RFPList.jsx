@@ -42,7 +42,7 @@ const RFPList = ({
             ) : masterResponse ? (
               <div className="details-section" style={{ marginTop: '0', borderTop: '3px solid #228b22' }}>
                 <div className="final-response-box">
-                    <h3>{masterResponse.rfpTitle} ✅</h3>
+                    <h3>{masterResponse.rfpTitle} </h3>
                     <p><strong>Status:</strong> {masterResponse.finalStatus}</p>
                     <p><strong>Summary:</strong> {masterResponse.message}</p>
                 </div>

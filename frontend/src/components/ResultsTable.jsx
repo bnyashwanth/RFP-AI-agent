@@ -74,7 +74,7 @@ const ResultsTable = ({ data }) => {
       ) : (
         // --- FINAL REPORT VIEW ---
         <>
-          <h2>Final Consolidated Report (Available Items) ✅</h2>
+          <h2>Final Consolidated Report (Available Items) </h2>
           <div style={{ marginBottom: '20px' }}>
             <button onClick={() => downloadCsv(finalReport, 'Final_Response.csv')} className="btn-primary" style={{ marginRight: '10px' }}>Download Final CSV</button>
             <button onClick={() => downloadPdf(finalReport, 'Final_Response.pdf')} className="btn-primary">Download Final PDF</button>

@@ -5,8 +5,8 @@ import Dashboard from './pages/Dashboard';
 import UploadPage from './pages/UploadPage'; 
 
 
-const SettingsPage = () => <div className="details-section"><h2>Settings</h2><p> ediot and upload the settings page .</p></div>;
-const SigninPage = () => <div className="details-section"><h2>Sign In</h2><p>Authentication form will be here.</p></div>;
+const SettingsPage = () => <div className="details-section"><h2>Settings</h2><p> i will  upload the settings page here in next feew weeks.</p></div>;
+const SigninPage = () => <div className="details-section"><h2>Sign In</h2><p>Authentication form will be displayed  here.</p></div>;
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
